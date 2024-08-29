@@ -46,13 +46,13 @@ const TodosContextProvider = ({ children }: TodosContextProviderProps) => {
       setTodos(upddatedTodos);
     }
   };
-  const fetchTodos = async () => {
-    const response = await fetch(
-      "https://bytegrad.com/course-assets/api/todos"
-    );
-    const todos = await response.json();
-    setTodos(todos);
-  };
+  //   const fetchTodos = async () => {
+  //     const response = await fetch(
+  //       "https://bytegrad.com/course-assets/api/todos"
+  //     );
+  //     const todos = await response.json();
+  //     setTodos(todos);
+  //   };
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));

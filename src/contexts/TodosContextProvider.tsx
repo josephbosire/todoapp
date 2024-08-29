@@ -21,6 +21,7 @@ const getInitialTodos: InitialTodoOperation = () => {
   if (savedTodos) {
     return JSON.parse(savedTodos);
   }
+  return [];
 };
 
 const TodosContextProvider = ({ children }: TodosContextProviderProps) => {
